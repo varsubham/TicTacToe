@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Tic Tac Toe
+        </title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="title">
+            <h1>Tic Tac Toe Game</h1>
+        </header>
+        <main >
+            <div id="cant_think_of_anything">
+                <img hidefocus="true" class="grid"  id="test1" src="image/grid.png" alt="grid_image" usemap="#grid_layout">
+                <span id="playerturn1">Player X turn</span><br>
+                <span id="who_won">test</span><br>
+                <span id="playerturn2">Player O turn</span>
+
+            </div>
+            <map name="grid_layout">
+                <area shape="rect" id="11" onclick="getresponse(this.id)" coords="0,0,124,124" href="#">
+                <area shape="rect" id="12" onclick="getresponse(this.id)" coords="136,0,261,124" href="#">
+                <area shape="rect" id="13" onclick="getresponse(this.id)" coords="278,0,398,123" href="#">
+                <area shape="rect" id="21" onclick="getresponse(this.id)" coords="0,137,120,261" href="#">
+                <area shape="rect" id="22" onclick="getresponse(this.id)" coords="139,138,261,261" href="#">
+                <area shape="rect" id="23" onclick="getresponse(this.id)" coords="281,139,399,262" href="#">
+                <area shape="rect" id="31" onclick="getresponse(this.id)" coords="0,279,120,399" href="#">
+                <area shape="rect" id="32" onclick="getresponse(this.id)" coords="139,279,263,399" href="#">
+                <area shape="rect" id="33" onclick="getresponse(this.id)" coords="278,279,399,399" href="#">
+            </map>
+            <br>
+            <br>
+            <span  id="start">
+                <a href="#" id="start_btn" onclick="start_fun()">Start</a>
+            </span>
+            <span  id="reset">
+                <a href="#" id="reset_btn" onclick="reset_fun()">Reset</a>
+            </span>
+        </main>
+        <script src="app.js"></script>
+    </body>
+</html>

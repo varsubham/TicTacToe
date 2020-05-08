@@ -1,0 +1,117 @@
+#playerturn1{
+    float: right;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 600px;
+    position: absolute;
+    bottom: 300px;
+    border: 3px solid white;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    visibility: hidden;
+
+}
+#start > a{
+    background-color: white;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 8px 8px;
+    margin-left: 220px;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    color: #707070;
+    transition-duration: 0.3s;
+}
+#start > a:hover{
+    background-color: #929292;
+    color: white;
+}
+
+#reset > a {
+    background-color: white;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 8px 8px;
+    margin-left: 80px;
+    visibility: hidden;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    color: #707070;
+    transition-duration: 0.3s;
+}
+/* #reset_new{
+    text-decoration: none;
+} */
+#reset > a:hover{
+    background-color: #929292;
+    color: white;
+}
+
+#playerturn2{
+    float: right;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 600px;
+    position: absolute;
+    bottom: 80px;
+    border: 3px solid white;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    visibility: hidden;
+
+}
+#who_won{
+    float: right;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 600px;
+    position: absolute;
+    bottom: 190px;
+    border: 5px solid white;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    visibility: hidden;
+
+}
+
+
+*{
+    margin:0;
+    padding:0;
+}
+
+h1{
+    background-color:white;
+    text-align: center;
+    color: #707070;
+    font-size: 40px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #707070;
+}
+.grid{
+    display: block;
+    margin-left: 132px;
+    margin-top: 43px;
+    position: relative;
+
+}
+map area{
+    outline: none;
+}
+
+#cant_think_of_anything{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 43px;
+    position: relative;
+}
