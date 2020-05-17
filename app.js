@@ -101,17 +101,12 @@ function is_full(arr){
 function display_player_chance(player_turn){
     if(starting == true){
     if(player_turn == 2){
-        // console.log("player x turn");
-        //playturn2.style.display = "none";
         playturn1.style.visibility = "visible";
         playturn2.style.visibility = "hidden";
-        //playturn1.style.visibility = "visible";
     }
     else if(player_turn == 1){
-        // console.log("player o turn");
         playturn2.style.visibility = "visible";
         playturn1.style.visibility = "hidden";
-        //playturn1.style.visibility = "visible";
 
     }
 }}
@@ -138,11 +133,12 @@ function display_cross(clicked_id){
     img123.src = "image/cross.png";
     img123.style.position = "absolute"
     img123.className = "new_element";
-    // img123.id = "new_element";
     display_at_position_clicked(clicked_id, img123);
 
 
 }
+
+//this will display either X or O at the clicked position
 function display_at_position_clicked(clicked_id, img123){
     var div_grid = document.getElementById("cant_think_of_anything");
     if(clicked_id == "11"){
@@ -191,17 +187,17 @@ function display_at_position_clicked(clicked_id, img123){
         div_grid.appendChild(img123);
     }
 }
+
+//this function will reset the grids
 function reset_fun(){
     var new_elements = document.getElementsByClassName("new_element");
     var start_btn = document.getElementById("start_btn");
     var reset_btn = document.getElementById("reset_btn");
-        // for(var i=0;i<new_elements.length;i++){
-        //     new_elements[i].remove
-        // }
         playturn1.style.visibility = "hidden";
         playturn2.style.visibility = "hidden";
         display_won.style.visibility = "hidden";
         initializing_zero();
+        //this removes all the X and O element that were created
         while(new_elements.length!=0){
             new_elements[0].remove();
         }
@@ -209,6 +205,7 @@ function reset_fun(){
         starting=false;
         reset_btn.style.visibility = "hidden";
     }
+//start function
 function start_fun(){
     var start_btn = document.getElementById("start_btn");
     var reset_btn = document.getElementById("reset_btn");
@@ -224,17 +221,5 @@ function display_circle(clicked_id){
     img123.src = "image/circle.png";
     img123.style.position = "absolute"
     img123.className = "new_element";
-    // img123.id = "new_element";
     display_at_position_clicked(clicked_id, img123);
-}
-
-function is_empty(arr){
-    for(var i=0;i<arr.length;i++){
-        for(var j=0;j<arr.length;j++){
-            if(arr[i][j] == 0){
-                return true;
-            }
-        }
-    }
-    return false
 }
