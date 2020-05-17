@@ -2,11 +2,13 @@ var playturn1 = document.getElementById("playerturn1");
 var playturn2 = document.getElementById("playerturn2");
 var starting = false;
 var display_won = document.getElementById("who_won");
-var player_turn = 1; // 1 for player 1 and 2 for player 2
+
+var player_turn = 1; // 1 for 'player 1' and 2 for 'player 2'
+
 //creating 1d array
 var arr = new Array(3);
-//creating 2d array
 
+//creating 2d array
 for(var i = 0;i<arr.length;i++){
     arr[i] = [];
 }
@@ -22,6 +24,7 @@ for(var i = 0;i<arr.length;i++){
     }
 }}
 
+//function returns 0 if its a tie, 1 if 'X' won and 2 if 'O' won
 function who_won(){
     var anchor_point;
     for(var i=0;i<3;i++){
