@@ -59,20 +59,17 @@ function who_won(){
 
 
 function getresponse(clicked_id){
-    // console.log(clicked_id);
     if(starting == true){
     display_player_chance(player_turn);
     fill_grid(clicked_id);
     if(who_won() == 1 || who_won() == 2){
         starting = false;
-        //console.log(who_won());
         xyz(who_won());
         playturn1.style.visibility = "hidden";
         playturn2.style.visibility = "hidden";
     }
     else if(who_won() == 0 && is_full(arr) == true){
         starting = false;
-        //console.log(who_won());
         xyz(who_won());
         playturn1.style.visibility = "hidden";
         playturn2.style.visibility = "hidden";
